@@ -18,7 +18,7 @@ apply plugin:"org.grails.grails-plugin-publish"
 apply plugin:"org.grails.grails-gsp"
 
 archivesBaseName = 'routing'
-version "2.0.0"
+version "2.0.1"
 group "org.grails.plugins"
 
 ext {
@@ -57,7 +57,7 @@ dependencies {
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
 
-    String camelVersion = '2.15.0'
+    String camelVersion = '2.17.3'
     compile "org.apache.camel:camel-core:${camelVersion}"
     compile "org.apache.camel:camel-spring:${camelVersion}", {
         exclude module: 'spring-aop' 
